@@ -1,0 +1,72 @@
+{
+  "name": "react-scroll-infinity",
+  "version": "1.0.0",
+  "description": "A performant React hook for infinite scrolling using Intersection Observer API",
+  "author": "saykarim",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
+      },
+      "require": {
+        "types": "./lib/index.d.cts",
+        "default": "./lib/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "react",
+    "hook",
+    "infinite-scroll",
+    "intersection-observer",
+    "useInfiniteScroll",
+    "pagination",
+    "lazy-loading"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saykarim/react-scroll-infinity"
+  },
+  "homepage": "https://github.com/saykarim/react-scroll-infinity#readme",
+  "bugs": {
+    "url": "https://github.com/saykarim/react-scroll-infinity/issues"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:lib": "tsup",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build:lib"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tsup": "^8.5.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^7.2.4"
+  }
+}
