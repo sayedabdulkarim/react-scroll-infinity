@@ -7,6 +7,8 @@ A performant React hook for infinite scrolling using the Intersection Observer A
 [![npm version](https://img.shields.io/npm/v/react-scroll-infinity.svg)](https://www.npmjs.com/package/react-scroll-infinity)
 [![license](https://img.shields.io/npm/l/react-scroll-infinity.svg)](https://github.com/sayedabdulkarim/react-scroll-infinity/blob/main/LICENSE)
 
+**[Live Demo](https://react-scroll-infinity-production.up.railway.app/)**
+
 ## Features
 
 - **Performant** - Uses Intersection Observer (no scroll event listeners)
