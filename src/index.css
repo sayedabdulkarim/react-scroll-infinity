@@ -170,22 +170,106 @@ body {
 }
 
 /* ============================================
-   TABS & NAVIGATION
+   APP HEADER
    ============================================ */
 .app {
   min-height: 100vh;
 }
 
+.app-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.header-text {
+  text-align: left;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+  font-weight: 700;
+}
+
+.author-name {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0 0;
+}
+
+.author-name a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.author-name a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   TABS & NAVIGATION
+   ============================================ */
 .tabs {
   display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
   background: white;
   border-bottom: 1px solid #e0e0e0;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.made-with {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.made-with .heart {
+  color: #ef4444;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.made-with a {
+  color: #646cff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.made-with a:hover {
+  text-decoration: underline;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .tab {
@@ -375,9 +459,21 @@ body {
    DARK MODE - Additional Styles
    ============================================ */
 @media (prefers-color-scheme: dark) {
+  .app-header {
+    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  }
+
   .tabs {
     background: #2a2a2a;
     border-bottom-color: #444;
+  }
+
+  .made-with {
+    color: #aaa;
+  }
+
+  .made-with a {
+    color: #818cf8;
   }
 
   .tab {
