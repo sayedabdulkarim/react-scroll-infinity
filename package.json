@@ -1,6 +1,6 @@
 {
   "name": "react-scroll-infinity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A performant React hook for infinite scrolling using Intersection Observer API",
   "author": "Sayed Abdul Karim",
   "license": "MIT",
