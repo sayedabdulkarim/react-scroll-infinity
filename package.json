@@ -2,7 +2,7 @@
   "name": "react-scroll-infinity",
   "version": "1.0.0",
   "description": "A performant React hook for infinite scrolling using Intersection Observer API",
-  "author": "saykarim",
+  "author": "Sayed Abdul Karim",
   "license": "MIT",
   "type": "module",
   "main": "./lib/index.cjs",
@@ -34,11 +34,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/saykarim/react-scroll-infinity"
+    "url": "https://github.com/sayedabdulkarim/react-scroll-infinity"
   },
-  "homepage": "https://github.com/saykarim/react-scroll-infinity#readme",
+  "homepage": "https://github.com/sayedabdulkarim/react-scroll-infinity#readme",
   "bugs": {
-    "url": "https://github.com/saykarim/react-scroll-infinity/issues"
+    "url": "https://github.com/sayedabdulkarim/react-scroll-infinity/issues"
   },
   "scripts": {
     "dev": "vite",
